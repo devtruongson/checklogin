@@ -86,3 +86,41 @@ cancelButton.addEventListener('click', () => {
     userNameElement.value = "";
     passwordElement.value = "";
 })
+
+const arraySort = [12, 2, 8, 1, 3, 10, 15, 14];
+
+function QuickSort(array, left, right) {
+    let i = left;
+    let j = right;
+    const mid = Math.floor((left + right) / 2);
+    const valueMid = array[mid];
+
+    while (i < j) {
+        while (array[i] < valueMid) {
+            i++;
+        }
+
+        while (array[j] > valueMid) {
+            j--;
+        }
+
+        if (i <= j) {
+            const tam = array[i];
+            array[i] = array[j];
+            array[j] = tam;
+            i++;
+            j--;
+        }
+    }
+
+    if (left < j) {
+        QuickSort(array, left, j);
+    }
+
+    if (right > i) {
+        QuickSort(array, i, right);
+    }
+}
+
+QuickSort(arraySort, 0, arraySort.length - 1)
+

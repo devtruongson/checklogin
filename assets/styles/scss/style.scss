@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+}
+
+.uppercase {
+
+    text-transform: uppercase;
+}
+
+.about-page {
+
+    .top-about {
+        h1 {
+
+            p {
+                &:first-child {
+                    font-size    : 28px;
+                    margin-bottom: 3px;
+                }
+
+                &:last-child {
+                    display      : inline-block;
+                    padding      : 0 10px 10px;
+                    font-size    : 34px;
+                    border-bottom: 3px solid #ee4d2d;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+    .center-about {
+        h2 {
+            font-weight  : 400;
+            font-size    : 30px;
+            display      : inline-block;
+            padding      : 0 10px 10px;
+            border-bottom: 3px solid #ee4d2d;
+            border-radius: 3px;
+
+            p {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .footer-about {
+        padding: 20px 200px;
+
+        p {
+            text-align   : center;
+            margin-bottom: 3px;
+
+            &:first-child {
+                text-align: justify;
+            }
+
+            a {
+                text-decoration: none;
+                color          : currentColor;
+            }
+        }
+    }
+
+}
+
+.search-page {
+    h2 {
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    .search-body {
+
+        .search-item {
+            display    : flex;
+            align-items: center;
+            gap        : 6px;
+            font-weight: 600;
+        }
+    }
+}
+
+.billing-info {
+    .billing-body {
+        border: 2px solid #bd2762;
+
+        h2 {
+            height          : 40px;
+            background-color: #bd2762;
+            display         : flex;
+            justify-content : center;
+            align-items     : center;
+            padding         : 10px 0;
+            color           : #fff;
+            font-size       : 24px;
+            font-weight     : 700;
+            margin          : 0;
+        }
+
+        .wp-body {
+            border: 1px solid #bd2762;
+        }
+
+        .billing-body-top,
+        .billing-body-bottom {
+            padding: 10px 60px;
+
+            .billing-body-top-item {
+                display      : flex;
+                gap          : 20px;
+                margin-bottom: 20px;
+
+                &>label {
+                    flex       : 1;
+                    text-align : right;
+                    font-weight: 700;
+                }
+
+                .input-wp {
+                    width: 85%;
+
+                    input {
+                        width        : 100%;
+                        border       : 1px solid #888;
+                        padding      : 6px 10px;
+                        border-radius: 3px;
+                        height       : 30px;
+                        outline      : none;
+                    }
+
+                    &.fax {
+                        display    : flex;
+                        gap        : 40px;
+                        align-items: center;
+
+                        input {
+                            flex : 1;
+                            width: auto;
+                        }
+
+                        div {
+                            display    : flex;
+                            width      : 50%;
+                            gap        : 10px;
+                            align-items: center;
+
+                            label {
+                                font-weight: 700;
+                            }
+
+                            input {
+                                flex: 1;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .billing-body-bottom-item {
+                display      : flex;
+                gap          : 20px;
+                margin-bottom: 20px;
+
+                &>label {
+                    flex       : 1;
+                    text-align : right;
+                    font-weight: 700;
+                }
+
+                .input-wp {
+                    font-weight: 600;
+                    width      : 85%;
+
+                    textarea {
+                        width        : 100%;
+                        min-height   : 100px;
+                        border       : 1px solid #888;
+                        padding      : 6px 10px;
+                        border-radius: 3px;
+                        outline      : none;
+                    }
+                }
+            }
+
+            .button-wp {
+
+                display        : flex;
+                justify-content: center;
+                gap            : 200px;
+
+                button {
+                    border       : 1px solid #ccc;
+                    padding      : 6px 30px;
+                    outline      : none;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+.t-speed-company {
+
+    .t-speed-company-thumbnail {
+        background-image       : url('../../imgs/bg.jpg');
+        height                 : 320px;
+        background-repeat      : no-repeat;
+        background-size        : cover;
+        background-position    : center;
+        position               : relative;
+        border-top-left-radius : 6px;
+        border-top-right-radius: 6px;
+
+        h2 {
+            position        : absolute;
+            height          : 30%;
+            bottom          : 0;
+            left            : 0;
+            right           : 0;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.4));
+            margin          : 0;
+            display         : flex;
+            justify-content : flex-end;
+            padding         : 0 100px;
+            align-items     : center;
+            font-weight     : 700;
+            font-style      : italic;
+            text-shadow     : 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+                1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+                5px 13px 15px black;
+        }
+    }
+
+    .t-speed-company-body {
+        display: flex;
+
+        .t-speed-company-body-menu {
+            flex: 1;
+
+            table {
+                color      : rgb(42, 42, 214);
+                font-weight: 600;
+            }
+        }
+
+        .t-speed-company-body-form {
+            width: 80%;
+
+            h3 {
+                font-size      : 16px;
+                padding        : 5px;
+                color          : #ee4d2d;
+                font-weight    : 700;
+                background     : rgba(0, 0, 0, 0.03);
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+            }
+
+            .t-speed-company-body-form--item {
+                display      : flex;
+                gap          : 10px;
+                margin-bottom: 10px;
+                padding-left : 10px;
+
+                &>label {
+                    flex      : 1;
+                    text-align: right;
+                }
+
+                .input-wp {
+                    width: 85%;
+
+                    &:not(.more) {
+
+                        input,
+                        select,
+                        textarea {
+                            border       : 1px solid #888;
+                            padding      : 0 10px;
+                            border-radius: 3px;
+                            height       : 30px;
+                            outline      : none;
+                            width        : 50%;
+                        }
+
+                        textarea {
+                            min-height: 100px;
+                        }
+                    }
+
+                    &.more {
+                        display: flex;
+                        gap    : 20px;
+                    }
+
+                    .btn-wp-tsp {
+                        display    : flex;
+                        gap        : 10px;
+                        align-items: center;
+
+                        button {
+                            border       : 1px solid #ccc;
+                            outline      : none;
+                            border-radius: 4px;
+                            padding      : 6px 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cntt-uneti-page {
+    .cntt-uneti-page-thumbnail {
+        display      : flex;
+        height       : 140px;
+        border-radius: 4px;
+        overflow     : hidden;
+
+        img {
+            width          : 25%;
+            object-fit     : cover;
+            object-position: center;
+        }
+
+        &>div {
+            flex            : 1;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 1), #43688d);
+
+            h1 {
+                text-align     : center;
+                margin         : 0;
+                padding        : 0;
+                height         : 100%;
+                display        : flex;
+                justify-content: center;
+                flex-direction : column;
+
+                p {
+                    margin: 0;
+
+                    &:first-child {
+                        font-size  : 22px;
+                        font-weight: 500;
+                        color      : #fff;
+                    }
+
+                    &:last-child {
+                        font-size  : 30px;
+                        font-weight: 700;
+                        margin-top : 6px;
+                        color      : rgb(61, 61, 200);
+                    }
+                }
+            }
+        }
+    }
+
+    .cntt-uneti-page-body {
+        display: flex;
+
+        .cntt-uneti-page-body-left {
+            width           : 20%;
+            background-color: #fffdf0;
+            border-right    : 2px solid #666;
+
+
+            table {
+                color      : #fff;
+                background : #a9c1d9;
+                font-weight: 700;
+
+                tr {
+                    border      : 1.3px solid #666;
+                    border-right: none;
+
+                    th {
+                        min-height: 41px;
+                    }
+                }
+            }
+        }
+
+
+        .cntt-uneti-page-body-center {
+            flex            : 1;
+            margin          : 20px 10px;
+            border          : 1px solid #91bd89;
+            background-color: #fefefe;
+
+            .cntt-uneti-page-body-center-form {
+                table {
+                    border: 1px solid #91bd89;
+                }
+
+                h2 {
+                    font-size: 22px;
+                    margin   : 0;
+                    color    : #fff;
+                }
+
+                label {
+                    font-weight : 600;
+                    border-right: none;
+                }
+
+                .input-wp {
+                    width: 85%;
+
+                    input {
+                        border       : 1px solid #ccc;
+                        padding      : 6px 10px;
+                        outline      : none;
+                        border-radius: 6px;
+                    }
+                }
+            }
+
+            button {
+                border       : 1px solid #ccc;
+                border-radius: 6px;
+                padding      : 6px 20px;
+                outline      : none;
+            }
+        }
+
+        .cntt-uneti-page-body-right {
+            width           : 20%;
+            background-color: #fffdf0;
+            border-left     : 2px solid #666;
+
+            .cntt-uneti-page-body-right-thumnail {
+                background-image   : url('../../imgs/banner-tin-tuc-su-kien-1400x521.png');
+                width              : 100%;
+                height             : 120px;
+                background-position: center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+            }
+
+            p {
+                padding      : 1px 10px;
+                margin       : 0;
+                margin-bottom: 4px;
+                text-align   : justify;
+            }
+
+            a {
+                text-decoration: none;
+                position       : relative;
+
+                &.under {
+                    text-decoration: underline;
+                }
+
+                .badge {
+                    position         : absolute;
+                    background-image : url('data:image/svg+xml,%20%20%20%20%20%20%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%2C0%20200%2C200%22%3E%20%20%20%20%20%20%20%20%3Cpolygon%20fill%3D%22%23b81414%22%20points%3D%22100%2C%200%20113.29693%2C%2016.04649%20130.9017%2C%204.89435%20138.58919%2C%2024.26445%20158.77853%2C%2019.0983%20160.10408%2C%2039.89592%20180.9017%2C%2041.22147%20175.73555%2C%2061.41081%20195.10565%2C%2069.0983%20183.95351%2C%2086.70307%20200%2C%20100%20183.95351%2C%20113.29693%20195.10565%2C%20130.9017%20175.73555%2C%20138.58919%20180.9017%2C%20158.77853%20160.10408%2C%20160.10408%20158.77853%2C%20180.9017%20138.58919%2C%20175.73555%20130.9017%2C%20195.10565%20113.29693%2C%20183.95351%20100%2C%20200%2086.70307%2C%20183.95351%2069.0983%2C%20195.10565%2061.41081%2C%20175.73555%2041.22147%2C%20180.9017%2039.89592%2C%20160.10408%2019.0983%2C%20158.77853%2024.26445%2C%20138.58919%204.89435%2C%20130.9017%2016.04649%2C%20113.29693%200%2C%20100%2016.04649%2C%2086.70307%204.89435%2C%2069.0983%2024.26445%2C%2061.41081%2019.0983%2C%2041.22147%2039.89592%2C%2039.89592%2041.22147%2C%2019.0983%2061.41081%2C%2024.26445%2069.0983%2C%204.89435%2086.70307%2C%2016.04649%22%20/%3E%20%20%20%20%20%20%3C/svg%3E%20%20%20%20');
+                    background-repeat: no-repeat;
+                    width            : 25px;
+                    height           : 25px;
+                    display          : inline-flex;
+                    justify-content  : center;
+                    align-items      : center;
+                    font-size        : 10px;
+                    padding          : 6px;
+                    background-size  : cover;
+                    bottom           : 1px;
+                }
+            }
+
+        }
+    }
+}
+
+.font-bold {
+    font-weight: 700;
+}

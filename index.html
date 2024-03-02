@@ -19,33 +19,676 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"
         ></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
         <link rel="stylesheet" href="./assets/styles/css/style.css" />
     </head>
     <body>
         <main class="container py-5">
-            <h1 class="text-center">Đăng Nhập</h1>
-            <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input
-                    class="form-control"
-                    placeholder="Nhap username cua ban"
-                    id="username"
-                />
+            <table
+                class="table table-bordered mt-5 rounded-1 overflow-hidden table-hover"
+            >
+                <caption
+                    align="top"
+                    class="text-center"
+                    style="font-weight: 700; font-size: 24px"
+                >
+                    ĐƠN HÀNG
+                </caption>
+                <thead>
+                    <tr
+                        style="
+                            background-color: #8a2be1;
+                            color: #ec0628;
+                            font-weight: 700;
+                            text-align: center;
+                        "
+                    >
+                        <th scope="col">STT</th>
+                        <th scope="col">Mặt hàng</th>
+                        <th scope="col">Đơn giá</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Thành tiền</th>
+                        <th scope="col">Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody style="font-weight: 600; text-align: center">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Tủ lạnh</td>
+                        <td>15.000.000</td>
+                        <td>1</td>
+                        <td>15.000.000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Ti vi</td>
+                        <td>40.000.000</td>
+                        <td>2</td>
+                        <td>80.000.000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Máy giặt</td>
+                        <td>4.500.000</td>
+                        <td>3</td>
+                        <td>13.500.000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="4" class="text-center">
+                            <strong>Tổng tiền hàng</strong>
+                        </th>
+                        <td colspan="2" class="text-center">
+                            <strong>108.500.000</strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Bài giới thiệu -->
+            <div class="py-5 about-page">
+                <h1 class="my-5">Bài 4</h1>
+                <div class="uppercase text-center top-about">
+                    <h1>
+                        <p>Trường Đại Học Kinh Tế Kỹ Thuật Công Nghiệp</p>
+                        <p>Khoa Công Nghệ Thông Tin</p>
+                    </h1>
+                </div>
+                <div class="uppercase text-center center-about">
+                    <h2>
+                        <p>Tổ Truyền Thông Và Mạng Máy Tính</p>
+                        <p>Tổ Công Nghệ Phần Mềm</p>
+                        <p>Tổ Hệ Thống Thông Tin</p>
+                        <p>Tổ Kỹ Thuật Máy Tính</p>
+                    </h2>
+                </div>
+                <div class="footer-about">
+                    <p>
+                        <strong><u>Liên hệ</u></strong
+                        >: P.802 - Nhà 9 Tầng - 456 Minh Khai - Hai Bà Trưng -
+                        Hà Nội,P.802 - Nhà 9 Tầng - 456 Minh Khai - Hai Bà Trưng
+                        - Hà
+                    </p>
+                    <p>Website: khoacntt.uneti.edu.vn</p>
+                    <p>
+                        <a href="mailto:khoacntt.uneti@.moet.du.vn"
+                            >Email: khoacntt.uneti@.moet.du.vn</a
+                        >
+                    </p>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input
-                    id="password"
-                    type="password"
-                    class="form-control"
-                    placeholder="Nhap password cua ban"
-                />
+            <!-- search engines -->
+            <div class="py-5 search-page">
+                <h1 class="my-5">Bài 5</h1>
+                <h2>Search Engines</h2>
+                <h4>Click on the following to call up the search engine</h4>
+                <div class="search-body">
+                    <div class="search-item">
+                        <a href="http://www.google.com">Google search</a>
+                        <span><i class="bi bi-arrow-right"></i></span>
+                        <span>
+                            <a href="http://www.google.com"
+                                >http://www.google.com</a
+                            >
+                            <span>for Google</span>
+                        </span>
+                    </div>
+                    <div class="search-item">
+                        <a href="http://www.altavista.com">Altamata search</a>
+                        <span><i class="bi bi-arrow-right"></i></span>
+                        <span>
+                            <a href="http://www.altavista.com"
+                                >http://www.altavista.com</a
+                            >
+                            <span>for Altavista</span>
+                        </span>
+                    </div>
+                    <div class="search-item">
+                        <a href="http://www.Yahoo.com">Yahoo search</a>
+                        <span><i class="bi bi-arrow-right"></i></span>
+                        <span>
+                            <a href="http://www.Yahoo.com"
+                                >http://www.Yahoo.com</a
+                            >
+                            <span>for Yahoo</span>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="d-flex justify-content-end gap-2">
-                <button id="cancel" class="btn btn-warning">Hủy</button>
-                <button id="submit" class="btn btn-primary">Đăng Nhập</button>
+            <div class="py-5 table-page">
+                <h1 class="my-5">Bài 6</h1>
+                <table
+                    class="table table-bordered mt-5 rounded-1 overflow-hidden table-hover"
+                >
+                    <thead style="font-style: italic">
+                        <tr style="font-weight: 700; text-align: center">
+                            <th rowspan="2">Họ Tên</th>
+                            <th colspan="2">Lương</th>
+                        </tr>
+                        <tr style="font-weight: 700; text-align: center">
+                            <th>LươngCB</th>
+                            <th>Thưởng</th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-weight: 600">
+                        <tr>
+                            <th scope="row">Hà</th>
+                            <td>4000.000</td>
+                            <td>3000.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nam</th>
+                            <td>3000.000</td>
+                            <td>2000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <form class="py-5 billing-info">
+                <h1 class="my-5">Bài 7</h1>
+                <div class="billing-body">
+                    <h2 class="uppercase">Billing Info</h2>
+                    <div class="wp-body">
+                        <div class="billing-body-top">
+                            <div class="billing-body-top-item">
+                                <label for="fullname">Full name: *</label>
+                                <div class="input-wp">
+                                    <input
+                                        required
+                                        id="fullname"
+                                        type="text"
+                                        placeholder="please enter your fullname"
+                                    />
+                                </div>
+                            </div>
+                            <div class="billing-body-top-item">
+                                <label for="company">Company:</label>
+                                <div class="input-wp">
+                                    <input
+                                        id="company"
+                                        type="text"
+                                        placeholder="please enter company"
+                                    />
+                                </div>
+                            </div>
+                            <div class="billing-body-top-item">
+                                <label for="address">Address: *</label>
+                                <div class="input-wp">
+                                    <input
+                                        required
+                                        id="address"
+                                        type="text"
+                                        placeholder="please enter address"
+                                    />
+                                </div>
+                            </div>
+                            <div class="billing-body-top-item">
+                                <label for="city">City:</label>
+                                <div class="input-wp">
+                                    <input
+                                        id="city"
+                                        type="text"
+                                        placeholder="please enter city"
+                                    />
+                                </div>
+                            </div>
+                            <div class="billing-body-top-item">
+                                <label for="Country">Country:</label>
+                                <div class="input-wp">
+                                    <input
+                                        id="Country"
+                                        type="text"
+                                        placeholder="please enter country"
+                                    />
+                                </div>
+                            </div>
+                            <div class="billing-body-top-item">
+                                <label for="Phone">Phone:</label>
+                                <div class="input-wp fax">
+                                    <input
+                                        id="Phone"
+                                        type="text"
+                                        placeholder="please enter phone"
+                                    />
+                                    <div>
+                                        <label for="fax">Fax:</label>
+                                        <input
+                                            id="fax"
+                                            type="text"
+                                            placeholder="please enter fax"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="billing-body-top-item">
+                                <label for="email">E-mail:</label>
+                                <div class="input-wp">
+                                    <input
+                                        id="email"
+                                        type="text"
+                                        placeholder="please enter mail"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-1">
+                            <hr
+                                color="#cfa5bf"
+                                style="height: 2px; border-radius: 9999999px"
+                            />
+                        </div>
+                        <div class="billing-body-bottom">
+                            <div class="billing-body-bottom-item">
+                                <label>Term of payment: *</label>
+                                <div class="input-wp">
+                                    <div>
+                                        <input
+                                            id="lc"
+                                            name="payment"
+                                            type="radio"
+                                            placeholder="please enter mail"
+                                        />
+                                        <label for="lc">L/C at sight</label>
+                                    </div>
+                                    <div>
+                                        <input
+                                            id="dp"
+                                            name="payment"
+                                            type="radio"
+                                            placeholder="please enter mail"
+                                        />
+                                        <label for="dp">D/P at sight</label>
+                                    </div>
+                                    <div>
+                                        <input
+                                            id="tt"
+                                            name="payment"
+                                            type="radio"
+                                            placeholder="please enter mail"
+                                        />
+                                        <label for="tt"
+                                            >T.Tr at sight (30% in advance, 70%
+                                            after received shipping documents in
+                                            Fax)</label
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="billing-body-bottom-item">
+                                <label for="note">Content: *</label>
+                                <div class="input-wp">
+                                    <textarea
+                                        required
+                                        id="note"
+                                        type="text"
+                                        placeholder="please enter content"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <p style="font-style: italic">
+                                Fields with a* are required
+                            </p>
+                            <div class="button-wp">
+                                <button>Submit</button>
+                                <button type="reset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="py-5 mt-5 t-speed-company">
+                <h1 class="my-5">Bài 8</h1>
+                <div class="t-speed-company-thumbnail">
+                    <h2>T - SPEED COMPANY</h2>
+                </div>
+                <div class="t-speed-company-body">
+                    <div class="t-speed-company-body-menu">
+                        <table
+                            class="table table-bordered rounded-1 overflow-hidden table-hover"
+                        >
+                            <tbody style="font-weight: 600">
+                                <tr>
+                                    <th>Trang Chủ</th>
+                                </tr>
+                                <tr>
+                                    <th>Giới thiệu sản phẩm</th>
+                                </tr>
+                                <tr>
+                                    <th>Các đại lý</th>
+                                </tr>
+                                <tr>
+                                    <th>Dịch vụ</th>
+                                </tr>
+                                <tr>
+                                    <th>Hợp tác</th>
+                                </tr>
+                                <tr>
+                                    <th>Góp ý</th>
+                                </tr>
+                                <tr>
+                                    <th>Quảng cáo</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="t-speed-company-body-form">
+                        <form action="">
+                            <h3 class="uppercase text-center">Hộp Thư Góp Ý</h3>
+                            <div class="t-speed-company-body-form--item">
+                                <label for="hoten_c">Họ tên</label>
+                                <div class="input-wp">
+                                    <input
+                                        type="text"
+                                        placeholder="please name"
+                                        id="hoten_c"
+                                    />
+                                </div>
+                            </div>
+                            <div class="t-speed-company-body-form--item">
+                                <label for="select_c">Hộ khẩu</label>
+                                <div class="input-wp">
+                                    <select id="select_c">
+                                        <option value="TPHCM">
+                                            Tp Ho Chi Minh
+                                        </option>
+                                        <option value="HN">Ha Noi</option>
+                                        <option value="PT">Phu Tho</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="t-speed-company-body-form--item">
+                                <label>Góp ý về lĩnh vực</label>
+                                <div class="input-wp more">
+                                    <div>
+                                        <input id="dv" type="checkbox" />
+                                        <label for="dv">Dịch vụ</label>
+                                    </div>
+                                    <div>
+                                        <input id="sp" type="checkbox" />
+                                        <label for="sp">Sản phẩm</label>
+                                    </div>
+                                    <div>
+                                        <input id="other" type="checkbox" />
+                                        <label for="other">Khác</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-speed-company-body-form--item">
+                                <label>Ngôn ngữ</label>
+                                <div class="input-wp more">
+                                    <div>
+                                        <input id="vi" type="radio" name="lg" />
+                                        <label for="vi">Tiếng việt</label>
+                                    </div>
+                                    <div>
+                                        <input id="en" type="radio" name="lg" />
+                                        <label for="en">Tiếng anh</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="t-speed-company-body-form--item">
+                                <label for="ct_">Nội dung</label>
+                                <div class="input-wp">
+                                    <textarea
+                                        type="text"
+                                        placeholder="please content"
+                                        id="ct_"
+                                    ></textarea>
+                                    <div class="btn-wp-tsp">
+                                        <button>Gửi</button>
+                                        <button type="reset">Xóa</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </main>
-        <script src="./assets/js/main.js"></script>
+        <div class="py-5 cntt-uneti-page">
+            <h1 class="my-5">Bài 9</h1>
+            <div class="cntt-uneti-page-thumbnail">
+                <img
+                    src="./assets/imgs/pngtree-building-looking-up-at-the-background-of-high-rise-buildings-picture-image_2444255.jpg"
+                    alt="Hình ảnh tòa nhà"
+                />
+                <div>
+                    <h1 class="uppercase">
+                        <p>Khoa Công Nghệ Thông Tin</p>
+                        <p>Chương Trình Quản Lí Sinh Viên</p>
+                    </h1>
+                </div>
+            </div>
+            <div class="cntt-uneti-page-body">
+                <div class="cntt-uneti-page-body-left">
+                    <table class="table rounded-1 overflow-hidden table-hover">
+                        <tbody>
+                            <tr>
+                                <th>Trang Chủ</th>
+                            </tr>
+                            <tr>
+                                <th>Giới thiệu sản phẩm</th>
+                            </tr>
+                            <tr>
+                                <th>Các đại lý</th>
+                            </tr>
+                            <tr>
+                                <th>Dịch vụ</th>
+                            </tr>
+                            <tr>
+                                <th>Hợp tác</th>
+                            </tr>
+                            <tr>
+                                <th>Góp ý</th>
+                            </tr>
+                            <tr>
+                                <th>Quảng cáo</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cntt-uneti-page-body-center">
+                    <div class="cntt-uneti-page-body-center-form">
+                        <table
+                            class="table rounded-1 table-bordered table-hover"
+                        >
+                            <tbody>
+                                <tr>
+                                    <th
+                                        colspan="2"
+                                        style="
+                                            background-image: linear-gradient(
+                                                to bottom,
+                                                #91bd89,
+                                                #91bd89,
+                                                #91bd89,
+                                                rgba(255, 255, 255, 0.4)
+                                            );
+                                        "
+                                    >
+                                        <h2
+                                            class="uppercase text-center font-bold"
+                                        >
+                                            Thêm Sinh Viên
+                                        </h2>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="code_id"
+                                            >Mã sinh viên</label
+                                        >
+                                    </th>
+                                    <th>
+                                        <div class="input-wp">
+                                            <input
+                                                type="text"
+                                                id="code_id"
+                                                placeholder="Enter your ID"
+                                            />
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="hoten_d">Họ tên</label>
+                                    </th>
+                                    <th>
+                                        <div class="input-wp">
+                                            <input
+                                                type="text"
+                                                id="hoten_d"
+                                                placeholder="Enter your name"
+                                            />
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="date_birth"
+                                            >Ngày sinh</label
+                                        >
+                                    </th>
+                                    <th>
+                                        <div class="input-wp">
+                                            <input
+                                                type="date"
+                                                id="date_birth"
+                                            />
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <label for="image_d">Hình</label>
+                                    </th>
+                                    <th>
+                                        <div
+                                            style="
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 10px;
+                                            "
+                                        >
+                                            <div>
+                                                <input
+                                                    class="form-control"
+                                                    placeholder="chọn hình ảnh"
+                                                />
+                                            </div>
+                                            <div class="input-wp">
+                                                <input
+                                                    class="form-control"
+                                                    type="file"
+                                                    id="image_d"
+                                                />
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        <div>
+                                            <button>Add</button>
+                                            <button>Update</button>
+                                            <button>Save</button>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div
+                        class="cntt-uneti-page-body-center-table"
+                        style="padding: 0 2px"
+                    >
+                        <table class="table table-bordered m-0">
+                            <caption
+                                style="background-color: #a7c8ea; color: #fff"
+                                align="top"
+                                class="uppercase text-center font-bold"
+                            >
+                                Danh Sách Sinh Viên
+                            </caption>
+                            <thead>
+                                <tr style="background-color: #e7effb">
+                                    <th scope="col">STT</th>
+                                    <th scope="col">MASV</th>
+                                    <th scope="col">Họ tên</th>
+                                    <th scope="col">Ngày sinh</th>
+                                    <th scope="col">Hình</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>th09</td>
+                                    <td>Nguyễn Lan</td>
+                                    <td>1/1/1986</td>
+                                    <td>h1.jpg</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>th89</td>
+                                    <td>Thanh Nhàn</td>
+                                    <td>1/8/1985</td>
+                                    <td>h2.jpg</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="cntt-uneti-page-body-right">
+                    <div class="cntt-uneti-page-body-right-thumnail"></div>
+                    <div class="mt-1">
+                        <p>
+                            <a href=""
+                                >Giới thiệu lớp chuyên đề ngôn ngữ lập trình c#,
+                                áp dụng trong lập trình web
+                                <span class="badge">mới</span></a
+                            >
+                        </p>
+                        <p>
+                            <a href=""
+                                >Tuyển nhân viên lập trình Web
+                                <img
+                                    style="
+                                        width: 80%;
+                                        display: block;
+                                        margin: 10px auto;
+                                        object-fit: cover;
+                                        border-radius: 3px;
+                                    "
+                                    src="https://noithatotovietanh.com/admin/sanpham/nang-doi-xe-o-to-tat-ca-nhung-gi-ban-can-biet_3104_anh1.jpg"
+                                    alt="ô tô"
+                                />
+                            </a>
+                        </p>
+                        <p>
+                            <a href="" class="under">
+                                Thông báo về lịch thi HKI
+                            </a>
+                        </p>
+                        <p>
+                            <a href="" class="under"> Nhịp sống trẻ</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
