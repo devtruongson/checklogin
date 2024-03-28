@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+a,p,ul{
+    padding: 0;
+    margin: 0;
+}
+
+/* class chung */
+.flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.object-cover{
+    object-fit: cover;
+}
+
+.justfy-between{
+    justify-content: space-between;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* class css rieng */
+
+nav{
+    padding: 6px 10px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.logo{
+    width: 250px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+
+.content-wp{
+    display: flex;
+    border-top: 1px solid #ccc;
+    gap: 10px;
+}
+
+.content-left{
+    width: 40%;
+    padding: 0 10px;
+}
+
+.content-center{
+    width: 40%;
+}
+
+.content-right{
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.content-left-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+
+    h2{
+        padding: 6px 0;
+        margin: 0;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    &.center{
+        flex-direction: row-reverse;
+        align-items: start;
+    }
+
+    .cate-or-date{
+        margin-bottom: 10px;
+
+        span{
+            &:first-child{
+                font-weight: 500;
+            }
+
+            &:last-child{
+                color: #666;
+                font-weight: 500;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .description-content{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        color: #666;
+    }
+
+    img{
+        height: 120px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    &.no-border{
+        border-color: transparent;
+    }
+}
+
+.social{
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
